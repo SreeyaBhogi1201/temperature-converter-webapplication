@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 50px;
+    background-color: #bdeeff;
+  }
+  .container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+    overflow: hidden;
+  }
+  .result {
+    margin-top: 20px;
+  }
+  .nature {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  .sun {
+    position: absolute;
+    top: 20px;
+    right: 5px;
+    font-size: 30px;
+    color: #ffc107;
+  }
+  .moon {
+    position: absolute;
+    top: 20px;
+    right: 5px;
+    font-size: 30px;
+    color: #b0bec5; 
+  }
+  .cloud {
+    position: absolute;
+    top: 20px;
+    left: -20%;
+    font-size: 30px;
+    color: #fff; 
+    animation: moveCloud 60s linear infinite;
+  }
+  .tree {
+    position: absolute;
+    bottom: -5%;
+    left: 75%;
+    font-size: 80px;
+    color: #795548; 
+  }
+  .bush {
+    position: absolute;
+    bottom: 0;
+    right: 20%;
+    font-size: 30px;
+    color: #4caf50; 
+  }
+  @keyframes moveCloud {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(200%);
+    }
+  }
